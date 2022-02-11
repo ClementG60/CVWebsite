@@ -3,9 +3,14 @@
    margin: 0;
    padding: 0; 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #fafafa;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
@@ -103,42 +108,6 @@ header ul li a{
     text-align: justify;
     width: 50%;
     padding: 30px 30px;
-}
-
-@media only screen and (max-width: 762px) {
-    header {
-    flex-direction: column-reverse;
-    height: 100%;
-    align-items: flex-end;
-    }
-
-    header ul {
-        display: none;
-    }
-
-   .icon {
-       display: block;
-       cursor: pointer;
-       margin-right: 30px;
-       font-size: 20px;
-   }
-
-   header.responsive ul{
-       display: block;
-   }
-
-   header.responsive ul li{
-       margin-top: 20px;
-   }
-
-   .pictureMyself{
-        display: none;
-   }
-
-   .textMyself{
-    width: 90%;
-    padding: 20px 20px;
-    }
 }
 
 .containerSkills{
@@ -287,29 +256,6 @@ header ul li a{
     margin-right: 15px;
 }
 
-.containerLanguages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-    height: auto;
-    margin: auto;
-    margin-bottom: 120px;
-    border-radius: 3px;
-    box-shadow: 0 0 25px #f1f1f1;
-    padding: 20px 30px;
-}
-
-.containerLanguages div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.containerLanguages div p:first-child {
-    margin: 20px 0;
-}
-
 .timelineContainer{
     min-height: 100px;
     width: 100%;
@@ -377,6 +323,233 @@ header ul li a{
     color: #a8a8a8;
 }
 
+.containerHobbies {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    margin-bottom: 50px;
+    width: 80%;
+    padding: 10px 20px;
+}
+
+.containerHobbies h2{
+    margin-bottom: 20px;
+}
+
+.containerHobbies ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.containerHobbies ul li {
+    font-size: 22px;
+    width: 20%;
+}
+
+.card1 {
+    padding: 20px 10px;
+    background: no-repeat url("../img/wave1.svg");
+    border-radius: 10px;
+    box-shadow: 0 0 25px #f1f1f1;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.card2 {
+    padding: 20px 10px;
+    background: no-repeat url("../img/wave2.svg");
+    border-radius: 10px;
+    box-shadow: 0 0 25px #f1f1f1;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.card3 {
+    padding: 20px 10px;
+    background: no-repeat url("../img/wave3.svg");
+    border-radius: 10px;
+    box-shadow: 0 0 25px #f1f1f1;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.card4 {
+    padding: 20px 10px;
+    background: no-repeat url("../img/wave4.svg");
+    border-radius: 10px;
+    box-shadow: 0 0 25px #f1f1f1;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.containerHobbies ul li ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    color:#e05a47;
+}
+
+.containerHobbies ul li ul li {
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.containerPortfolio {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 200px;
+    width: 90%;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.card {
+    width: 40%;
+    box-shadow: 0 0 25px #f1f1f1;
+    transition: box-shadow 0.5s;
+    padding: 10px 20px;
+}
+
+.cardThumb{
+    height: 240px;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.imgBlosson{
+    height: 240px;
+    width: 100%;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.cardTitle {
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: #e05a47;
+    margin: 20px 5px;
+}
+
+.cardSubstitle {
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    color: #a8a8a8;
+    margin: 20px 5px;
+}
+
+.cardDescription {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    font-size: 16px;
+    color: #003f80;
+    transition: opacity 1.5s;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px #c7c7c7;
+}
+
+.card:hover .cardThumb{
+    height: 100px;
+}
+
+.card:hover .imgBlosson {
+    opacity: 0.6;
+}
+
+.card:hover .cardDescription{
+    height: auto;
+    opacity: 1;
+}
+
+.containerContact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 60%;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.jobSearched{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    color: #003f80;
+}
+
+.jobSearched ul {
+    list-style: none;
+}
+
+.jobSearched ul li {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.containerContact {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+}
+
+.contact div {
+    width: 50%;
+    padding: 20px 10px;
+    background: linear-gradient(90deg, rgba(0,63,128,1) 0%, rgba(224,90,71,1) 100%);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.contact div a {
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.contact div a i{
+    font-size: 50px;
+}
+
+.contact div:first-child{
+    background: linear-gradient(270deg, rgba(0,63,128,1) 0%, rgba(224,90,71,1) 100%);
+    margin-right: 10px;
+}
+
+.containerFooter {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    background: #003f80;
+}
+
+.containerFooter p {
+    margin-top: 15px;
+    color: white;
+}
+
 @media only screen and (min-width: 762px) {
     .timeline ul li{
         width: 50%;
@@ -439,154 +612,69 @@ header ul li a{
 
 }
 
-.containerHobbies {
-    display: flex;
-    flex-direction: column;
-    margin: 40px auto;
-    margin-bottom: 50px;
-    width: 80%;
-    padding: 10px 20px;
-}
+@media only screen and (max-width: 762px) {
+    header {
+    flex-direction: column-reverse;
+    height: 100%;
+    align-items: flex-end;
+    }
 
-.containerHobbies h2{
-    margin-bottom: 20px;
-}
+    header ul {
+        display: none;
+    }
 
-.containerHobbies ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
+   .icon {
+       display: block;
+       cursor: pointer;
+       margin-right: 30px;
+       font-size: 20px;
+   }
 
-.containerHobbies ul li {
-    font-size: 22px;
-    width: 20%;
-}
+   header.responsive ul{
+       display: block;
+   }
 
-.card1 {
-    padding: 20px 10px;
-    background: no-repeat url("../img/wave1.svg");
-    border-radius: 10px;
-    box-shadow: 0 0 25px #f1f1f1;
-    margin-bottom: 30px;
-    color: white;
-}
+   header.responsive ul li{
+       margin-top: 20px;
+   }
 
+   .pictureMyself{
+        display: none;
+   }
 
-
-.card2 {
-    padding: 20px 10px;
-    background: no-repeat url("../img/wave2.svg");
-    border-radius: 10px;
-    box-shadow: 0 0 25px #f1f1f1;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.card3 {
-    padding: 20px 10px;
-    background: no-repeat url("../img/wave3.svg");
-    border-radius: 10px;
-    box-shadow: 0 0 25px #f1f1f1;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.card4 {
-    padding: 20px 10px;
-    background: no-repeat url("../img/wave4.svg");
-    border-radius: 10px;
-    box-shadow: 0 0 25px #f1f1f1;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.containerHobbies ul li ul {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    color:#e05a47;
-}
-
-.containerHobbies ul li ul li {
-    font-size: 16px;
-    margin-top: 10px;
+   .textMyself{
     width: 100%;
-}
+    padding: 10px 5px;
+    }
 
-.containerPortfolio {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 50px;
-    width: 90%;
-    padding: 10px 20px;
-    background-color: white;
-}
+    .containerSkills{
+        width: 90%;
+    }
 
-.containerContact{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 50px;
-    width: 60%;
-    padding: 10px 20px;
-    background-color: white;
-}
+    .containerSoftware{
+        width: 90%;
+    }
 
-.jobSearched{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    color: #003f80;
-}
+    .containerHobbies ul {
+        flex-direction: column;
+    }
 
-.jobSearched ul {
-    list-style: none;
-}
+    .containerHobbies ul li {
+        width: 60%;
+    }
 
-.jobSearched ul li {
-    font-weight: bold;
-    margin-top: 10px;
-}
+    .contact {
+        flex-direction: column;
+    }
 
-.contact {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 20px auto;
-}
+    .contact div{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-.contact a {
-    width: 50%;
-    padding: 20px 10px;
-    background: #e05a47;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-}
+    .contact div:first-child {
+        margin-top: 20px;
+    }
 
-.contact a:first-child{
-    background:#003f80;
-    margin-right: 10px;
-}
-
-.containerFooter {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-    background: #003f80;
-}
-
-.containerFooter p {
-    margin-top: 15px;
-    color: white;
 }
