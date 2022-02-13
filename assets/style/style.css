@@ -164,6 +164,10 @@ header ul li a{
     background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
     animation: phpSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
+#mariaDB{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: mariaSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
 #bootstrap{
     background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
     animation: bootstrapSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
@@ -195,32 +199,37 @@ header ul li a{
 
 @keyframes htmlSlide{
     0%{width: 0%;}
-    100%{width: 45%;}
+    100%{width: 60%;}
 }
 
 @keyframes cssSlide{
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 55%;}
 }
 
 @keyframes jsSlide{
     0%{width: 0%;}
-    100%{width: 25%;}
+    100%{width: 35%;}
 }
 
 @keyframes phpSlide{
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 60%;}
+}
+
+@keyframes mariaSlide{
+    0%{width: 0%;}
+    100%{width: 50%;}
 }
 
 @keyframes bootstrapSlide{
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 60%;}
 }
 
 @keyframes wordpressSlide{
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 55%;}
 }
 
 @keyframes vscSlide{
