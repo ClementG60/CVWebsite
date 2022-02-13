@@ -611,6 +611,7 @@ section {
         margin-bottom: 50px;
         position: relative;
     }
+
     /* ::before crée un pseudo-element qui sera le 1er enfant de l'élément ciblé. On l'utilise pour ajouter du contenu esthétique à un élement via propriété CSS content. Par défaut, l'élément créé est de type en-ligne. */
     .timeline::before{
         content: "";
