@@ -403,6 +403,7 @@ header ul li a{
     width: 90%;
     padding: 10px 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 section {
@@ -416,10 +417,11 @@ section {
     margin: 10px;
     box-shadow: 0 0 25px #f1f1f1;
     border-radius: 20px;
-    transition: box-shadow 1s;
+    transition: box-shadow, transform 1s ease;
 }
 
 .card:hover{
+    transform: scale(1.03);
     box-shadow: 0 0 50px #c0c0c0;
 }
 
@@ -435,26 +437,44 @@ section {
 }
 
 .cardBody{
+    display: flex;
+    flex-direction: column;
     padding: 10px 20px;
 }
 
 .cardBody h3 {
     font-size: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     color: #e05a47;
 }
 
-.cardBody h4 {
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    font-style: italic;
-    margin-bottom: 10px;
+.cardBody p {
     color: #a8a8a8;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.cardBody p {
-    color: #003f80;
-    margin-bottom: 25px;
+.cardBody ul {
+    color: #a8a8a8;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.framework {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.framework li i {
+    color: #e05a47;
+    font-size: 40px;
+}
+
+.cardBody ul li {
+    font-style: italic;
+    margin-bottom: 5px;
+    padding-left: 10px;
 }
 
 .cardBody a {
@@ -564,10 +584,6 @@ section {
 
     .containerSoftware{
         width: 90%;
-    }
-        
-    .containerPortfolio {
-        flex-direction: column;
     }
 
     .card {
@@ -691,10 +707,6 @@ section {
 
     .containerHobbies ul li {
         width: 60%;
-    }
-
-    .containerPortfolio {
-        flex-direction: column;
     }
 
     .card {
