@@ -31,158 +31,165 @@
     </header>
     <main>
         <h1>Mon Curriculum Vitae numérique</h1>
-        <div class="containerInfoMyself">
+        <section>
             <h2 id="myself">A propos de moi</h2>
-            <div class="containerMyself">
-                <div class="pictureMyself">
-                    <img src="assets/img/myself.jfif" alt="">
+            <div class="containerInfoMyself revealUp revealDelay">
+                <div class="containerMyself">
+                    <div class="pictureMyself">
+                        <img src="assets/img/myself.jfif" alt="">
+                        <ul>
+                            <li><span>Prénom :</span> Clément</li>
+                            <li><span>Nom :</span> Guillaume</li>
+                            <li><span>Age :</span> 25ans</li>
+                            <li><span>Ville :</span> Versailles (78)</li>
+                        </ul>
+                    </div>
+                    <div class="textMyself">
+                        <p> Développeur web junior, je suis à la recherche d'une alternance afin d'obtenir un Bac +3
+                            "Concepteur Développeur d'applications" pour Avril 2022.<br>
+                            <br>Je profite de mon temps libre pour développer d'autres compétences, principalement en
+                            front-end.<br>
+                            <br>Ayant une formation d'Ingénieur Mécanique spécialisé dans la Simulation Numérique, j'ai
+                            décidé de me reconvertir en tant que développeur Web. Ayant toujours eu une attirance
+                            pour le domaine du numérique, j'ai décidé de sauter le pas et de tenter une nouvelle
+                            aventure.<br>
+                            <br>Etant quelqu'un d'autonome, je peux travailler seul ou en groupe, et mes expériences
+                            passés
+                            font que je sais m'adapter rapidement à un environnement inconnu. Je cherche toujours à
+                            satisfaire au mieux les demandes du client, en m'adaptant à ses besoins et en étant force de
+                            proposition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="containerSkills revealUp revealDelay">
+                <h2 id="skills">Mes compétences</h2>
+                <div class="bar">
+                    <div class="barStat" id="html">
+                        <p class="barText">HTML</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="css">
+                        <p class="barText">CSS</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="js">
+                        <p class="barText">JS</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="php">
+                        <p class="barText">PHP</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="mariaDB">
+                        <p class="barText">MariaDB</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="bootstrap">
+                        <p class="barText">Bootstrap</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="wordpress">
+                        <p class="barText">WordPress</p>
+                    </div>
+                </div>
+            </div>
+            <div class="containerSoftware revealUp revealDelay">
+                <h2>Logiciels</h2>
+                <div class="bar">
+                    <div class="barStat" id="vsc">
+                        <p class="barText">Visual Studio Code</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="git">
+                        <p class="barText">Git</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="adobexd">
+                        <p class="barText">Adobe XD</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="barStat" id="microsoft">
+                        <p class="barText">Suite Microsoft</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="timelineContainer">
+                <h2 id="parcours">Mon Parcours</h2>
+                <div class="timeline">
                     <ul>
-                        <li><span>Prénom :</span> Clément</li>
-                        <li><span>Nom :</span> Guillaume</li>
-                        <li><span>Age :</span> 25ans</li>
-                        <li><span>Ville :</span> Versailles (78)</li>
+                        <li class="revealUp revealDelay">
+                            <div class="timelineContent">
+                                <p class="date">Octobre 2021 - Mars 2022</p>
+                                <h3>Formation Développeur web</h3>
+                                <p class="location">La Manu, Versailles (78)</p>
+                                <p>Préparation au Titre Profesionnel "Développeur web et web mobile</p>
+                            </div>
+                        </li>
+                        <li class="revealUp revealDelay">
+                            <div class="timelineContent">
+                                <p class="date">Juin 2019 - Juin 2020</p>
+                                <h3>Ingénieur Mécanique</h3>
+                                <p class="location">Framatome, Courbevoie (92)</p>
+                                <p>Réalisation de Calcul de Dimensionnement sur le générateur de vapeur du parc existant</p>
+                                <p>Analyse et post-traitement des résultats</p>
+                                <p>Réalisation de Note de Calcul pour le client</p>
+                                <p>Gestion de projet</p>
+                                <p>Animation de réunion client</p>
+                            </div>
+                        </li>
+                        <li class="revealUp revealDelay">
+                            <div class="timelineContent">
+                                <p class="date">Septembre 2015 - Février 2019</p>
+                                <h3>Ecole d'ingénieur</h3>
+                                <p class="location">UTC, Compiègne (60)</p>
+                                <p>Filière : Génie des Systèmes Mécaniques</p>
+                                <p>Spécialisation : Simulation en Ingénierie Mécanique</p>
+                            </div>
+                        </li>
+                        <li class="revealUp revealDelay">
+                            <div class="timelineContent">
+                                <p class="date">Septembre 2018 - Février 2019</p>
+                                <h3>Stage Ingénieur Calcul</h3>
+                                <p class="location">CEA, Plateau de Saclay (91)</p>
+                                <p>Mise en place du Méthodologie de Calcul entre 2 outils R&D</p>
+                                <p>Réalisation de calcul statique pour le réacteur RJH</p>
+                                <p>Réalisation de note de calcul pour le client</p>
+                            </div>
+                        </li>
+                        <li class="revealUp revealDelay">
+                            <div class="timelineContent">
+                                <p class="date">Septembre 2013 - Juillet 2015</p>
+                                <h3>DUT</h3>
+                                <p class="location">IUT, Amiens (80)</p>
+                                <p>Filière : Génie Mécanique et Productique</p>
+                            </div>
+                        </li>
+                        <li class="revealUp revealDelay">
+                            <div class="timelineContent">
+                                <p class="date">Juillet 2013</p>
+                                <h3>Baccaulauréat</h3>
+                                <p class="location">Lycée Jean Calvin, Noyon (60)</p>
+                                <p>Filière : Scientifique Option Physique-Chimie, Mention Très Bien</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="textMyself">
-                    <p> Développeur web junior, je suis à la recherche d'une alternance afin d'obtenir un Bac +3
-                        "Concepteur Développeur d'applications" pour Avril 2022.<br>
-                        <br>Je profite de mon temps libre pour développer d'autres compétences, principalement en
-                        front-end.<br>
-                        <br>Ayant une formation d'Ingénieur Mécanique spécialisé dans la Simulation Numérique, j'ai
-                        décidé de me reconvertir en tant que développeur Web. Ayant toujours eu une attirance
-                        pour le domaine du numérique, j'ai décidé de sauter le pas et de tenter une nouvelle
-                        aventure.<br>
-                        <br>Etant quelqu'un d'autonome, je peux travailler seul ou en groupe, et mes expériences passés
-                        font que je sais m'adapter rapidement à un environnement inconnu. Je cherche toujours à
-                        satisfaire au mieux les demandes du client, en m'adaptant à ses besoins et en étant force de
-                        proposition.
-                    </p>
-                </div>
             </div>
-        </div>
-        <div class="containerSkills">
-            <h2 id="skills">Mes compétences</h2>
-            <div class="bar">
-                <div class="barStat" id="html">
-                    <p class="barText">HTML</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="css">
-                    <p class="barText">CSS</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="js">
-                    <p class="barText">JS</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="php">
-                    <p class="barText">PHP</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="mariaDB">
-                    <p class="barText">MariaDB</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="bootstrap">
-                    <p class="barText">Bootstrap</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="wordpress">
-                    <p class="barText">WordPress</p>
-                </div>
-            </div>
-        </div>
-        <div class="containerSoftware">
-            <h2>Logiciels</h2>
-            <div class="bar">
-                <div class="barStat" id="vsc">
-                    <p class="barText">Visual Studio Code</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="git">
-                    <p class="barText">Git</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="adobexd">
-                    <p class="barText">Adobe XD</p>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="barStat" id="microsoft">
-                    <p class="barText">Suite Microsoft</p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineContainer">
-            <h2 id="parcours">Mon Parcours</h2>
-            <div class="timeline">
-                <ul>
-                    <li>
-                        <div class="timelineContent">
-                            <p class="date">Octobre 2021 - Mars 2022</p>
-                            <h3>Formation Développeur web</h3>
-                            <p class="location">La Manu, Versailles (78)</p>
-                            <p>Préparation au Titre Profesionnel "Développeur web et web mobile</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timelineContent">
-                            <p class="date">Juin 2019 - Juin 2020</p>
-                            <h3>Ingénieur Mécanique</h3>
-                            <p class="location">Framatome, Courbevoie (92)</p>
-                            <p>Réalisation de Calcul de Dimensionnement sur le générateur de vapeur du parc existant</p>
-                            <p>Analyse et post-traitement des résultats</p>
-                            <p>Réalisation de Note de Calcul pour le client</p>
-                            <p>Gestion de projet</p>
-                            <p>Animation de réunion client</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timelineContent">
-                            <p class="date">Septembre 2015 - Février 2019</p>
-                            <h3>Ecole d'ingénieur</h3>
-                            <p class="location">UTC, Compiègne (60)</p>
-                            <p>Filière : Génie des Systèmes Mécaniques</p>
-                            <p>Spécialisation : Simulation en Ingénierie Mécanique</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timelineContent">
-                            <p class="date">Septembre 2018 - Février 2019</p>
-                            <h3>Stage Ingénieur Calcul</h3>
-                            <p class="location">CEA, Plateau de Saclay (91)</p>
-                            <p>Mise en place du Méthodologie de Calcul entre 2 outils R&D</p>
-                            <p>Réalisation de calcul statique pour le réacteur RJH</p>
-                            <p>Réalisation de note de calcul pour le client</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timelineContent">
-                            <p class="date">Septembre 2013 - Juillet 2015</p>
-                            <h3>DUT</h3>
-                            <p class="location">IUT, Amiens (80)</p>
-                            <p>Filière : Génie Mécanique et Productique</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timelineContent">
-                            <p class="date">Juillet 2013</p>
-                            <h3>Baccaulauréat</h3>
-                            <p class="location">Lycée Jean Calvin, Noyon (60)</p>
-                            <p>Filière : Scientifique Option Physique-Chimie, Mention Très Bien</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </section>
         <!--<div class="containerHobbies">
             <h2 id="hobbies">Hobbies</h2>
             <ul>
@@ -218,7 +225,7 @@
         </div> -->
         <section id="portfolio">
             <h2>Mes projets</h2>
-            <div class="containerPortfolio">
+            <div class="containerPortfolio revealUp revealDelay">
                 <div class="card">
                     <div class="cardThumb">
                         <img src="assets/img/laVersallaise.PNG" alt="">
@@ -269,9 +276,28 @@
                 </div>
             </div>
         </section>
+        <section>
+            <h2>Me contacter</h2>
+            <div class="containerContact revealUp revealDelay">
+                <p>Actuellement à la recherche d'une alternance, je suis intéressé par les postes de :</p>
+                <ul>
+                    <li>Développeur Front-End</li>
+                    <li>Développeur Full Stack</li>
+                    <li>Développeur Back-End</li>
+                </ul>
+                <div>
+                    <div>
+                        <a href="telto:0665732259">0665732259</a>
+                    </div>
+                    <div>
+                        <a href="mailto:cle_guillaume@hotmail.fr">cle_guillaume@hotmail.fr</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="containerLink">
+        <div class="containerLink revealUp revealDelay">
             <a class="l3" href="assets/doc/CV_Clement_GUILLAUME.pdf"><i class="fas fa-print"></i></a>
             <a class="l3" href="https://github.com/ClementG60"><i class="fab fa-github"></i></a>
             <a class="l3" href="https://www.linkedin.com/in/cl%C3%A9ment-guillaume-3794b2140/"><i
@@ -284,6 +310,7 @@
 
     </footer>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/revealScroll.js"></script>
 </body>
 
 </html>

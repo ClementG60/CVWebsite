@@ -52,10 +52,6 @@ header ul li a{
     display: none;
 }
 
-.containerInfo{
-    font-size: 25px;
-}
-
 .containerInfoMyself{
     display: flex;
     margin: auto;
@@ -146,112 +142,6 @@ header ul li a{
     color: #f1f1f1;
 }
 
-#html{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#css{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#js{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-#php{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: phpSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-#mariaDB{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: mariaSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-#bootstrap{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: bootstrapSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-#wordpress{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: wordpressSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#vsc{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: vscSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#git{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: gitSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#adobexd{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: adobexdSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#microsoft{
-    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
-    animation: microsoftSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-@keyframes htmlSlide{
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-
-@keyframes cssSlide{
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-@keyframes jsSlide{
-    0%{width: 0%;}
-    100%{width: 35%;}
-}
-
-@keyframes phpSlide{
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-
-@keyframes mariaSlide{
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-
-@keyframes bootstrapSlide{
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-
-@keyframes wordpressSlide{
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-@keyframes vscSlide{
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-@keyframes gitSlide{
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-@keyframes adobexdSlide{
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-@keyframes microsoftSlide{
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
-
 .containerLink {
     display: flex;
     align-items: center;
@@ -263,6 +153,7 @@ header ul li a{
 
 .containerLink a {
     margin-right: 15px;
+    text-decoration: none;
 }
 
 .timelineContainer{
@@ -426,7 +317,7 @@ section {
     margin: 10px;
     box-shadow: 0 0 25px #f1f1f1;
     border-radius: 20px;
-    transition: box-shadow, transform 1s ease;
+    transition: box-shadow, transform 0.6s ease;
 }
 
 .card:hover{
@@ -498,48 +389,42 @@ section {
     margin: auto;
     text-align: center;
     border-radius: 15px;
-    transform: scale(1);
-    transition: transform 0.5s;
+    transition: all 0.5s ease-out;
 }
 
 .cardBody a:hover {
-    background: #d33e2a;
-}
-
-.jobSearched{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    color: #003f80;
-}
-
-.jobSearched ul {
-    list-style: none;
-}
-
-.jobSearched ul li {
-    font-weight: bold;
-    margin-top: 10px;
+    background: transparent;
+    color: #e05a47;
+    border: none;
 }
 
 .containerContact {
     width: 80%;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    color: #003f80;
 }
 
-.contact {
+.containerContact ul {
+    width: 60%;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+
+.containerContact div {
     display: flex;
     width: 100%;
-    margin-top: 50px;
+    padding: 20px 0;
     justify-content: center;
+    margin-top: 30px;
 }
 
-.contact div {
+.containerContact div div {
     width: 30%;
-    padding: 20px 10px;
     background: linear-gradient(90deg, rgba(0,63,128,1) 0%, rgba(224,90,71,1) 100%);
     text-align: center;
     text-decoration: none;
@@ -549,17 +434,13 @@ section {
     border-radius: 10px;
 }
 
-.contact div a {
+.containerContact div a {
     padding: 20px 40px;
     text-decoration: none;
     color: white;
 }
 
-.contact div a i{
-    font-size: 50px;
-}
-
-.contact div:first-child{
+.containerContact div:first-child{
     background: linear-gradient(270deg, rgba(0,63,128,1) 0%, rgba(224,90,71,1) 100%);
     margin-right: 10px;
 }
@@ -603,6 +484,21 @@ section {
     .cardThumb {
         height: 250px;
     }
+
+    .containerContact div {
+        flex-direction: column;
+    }
+
+    .containerContact div div{
+        font-size: 16px;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .containerContact div div:first-child {
+        margin-top: 20px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -665,7 +561,6 @@ section {
          position: absolute;
          top: -25px;
      }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -728,17 +623,142 @@ section {
         height: 220px;
     }
 
-    .contact {
+    .containerContact ul {
+        display: flex;
         flex-direction: column;
     }
 
-    .contact div{
-        font-size: 16px;
-        width: 100%;
-        margin-bottom: 20px;
+    .containerContact ul li {
+        margin-bottom: 8px;
     }
 
-    .contact div:first-child {
-        margin-top: 20px;
+    .containerContact div {
+        flex-direction: column;
     }
+
+    .containerContact div div{
+        font-size: 16px;
+        width: 80%;
+    }
+}
+
+.revealUp {
+    opacity: 0;
+    transform: translateY(-80px);
+}
+
+.revealActiveUp {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .8s cubic-bezier(.49,.1,.59,.93);
+}
+
+.revealDelay {
+    transition-delay: .1s;
+}
+
+#html{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: htmlSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#css{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: cssSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#js{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: jsSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#php{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: phpSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#mariaDB{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: mariaSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#bootstrap{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: bootstrapSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#wordpress{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: wordpressSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#vsc{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: vscSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#git{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: gitSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#adobexd{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: adobexdSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#microsoft{
+    background: linear-gradient(90deg, rgba(230,95,73,1) 0%, rgba(35,50,182,1) 100%);
+    animation: microsoftSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+@keyframes htmlSlide{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+@keyframes cssSlide{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+@keyframes jsSlide{
+    0%{width: 0%;}
+    100%{width: 35%;}
+}
+
+@keyframes phpSlide{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+@keyframes mariaSlide{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+@keyframes bootstrapSlide{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+@keyframes wordpressSlide{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+@keyframes vscSlide{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+@keyframes gitSlide{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+@keyframes adobexdSlide{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+@keyframes microsoftSlide{
+    0%{width: 0%;}
+    100%{width: 85%;}
 }
