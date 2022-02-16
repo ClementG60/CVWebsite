@@ -460,6 +460,10 @@ section {
     color: white;
 }
 
+footer div a:visited {
+    color: #003f80;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
     .textMyself {
