@@ -128,6 +128,12 @@ header ul li a{
 .frontEnd, .backEnd, .CMS, .webDesign, .workEnvironment {
     padding-bottom: 10px;
     margin: 20px auto;
+    box-shadow: 10px 10px 25px #f1f1f1;
+    transition: all .8s ease-in;
+}
+
+.frontEnd:hover, .backEnd:hover, .CMS:hover, .webDesign:hover, .workEnvironment:hover {
+    box-shadow: 15px 15px 40px #d4d4d4;
 }
 
 .sectionSkills div div {
@@ -349,7 +355,7 @@ section {
     margin: auto;
     text-align: center;
     border-radius: 15px;
-    transition: all 0.5s ease-out;
+    transition: all .2s ease-in-out;
 }
 
 .cardBody a:hover {
@@ -379,12 +385,12 @@ section {
     display: flex;
     width: 100%;
     padding: 20px 0;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 30px;
 }
 
-.containerContact div div {
-    width: 30%;
+.containerContact div a {
+    width: 40%;
     background: linear-gradient(90deg, rgba(0,63,128,1) 0%, rgba(224,90,71,1) 100%);
     text-align: center;
     text-decoration: none;
@@ -392,17 +398,17 @@ section {
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
-}
-
-.containerContact div a {
-    padding: 20px 40px;
+    padding: 40px 20px;
     text-decoration: none;
     color: white;
 }
 
-.containerContact div:first-child{
+.containerContact div a:hover {
+    transform: scale(1.03);
+}
+
+.containerContact div a:first-child{
     background: linear-gradient(270deg, rgba(0,63,128,1) 0%, rgba(224,90,71,1) 100%);
-    margin-right: 10px;
 }
 
 .containerFooter {
