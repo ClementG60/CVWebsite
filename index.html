@@ -63,9 +63,11 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="containerSkills revealUp revealDelay">
-                <h2 id="skills">Mes compétences</h2>
+        <section class="sectionSkills">
+            <h2 id="skills">Mes compétences</h2>
+            <div class="frontEnd revealRight">
+                <h3>Front-End</h3>
+                <p class="textSkill">Création de site web responsive, accessibles et répondant aux critères W3C.</p>
                 <div class="bar">
                     <div class="barStat" id="html">
                         <p class="barText">HTML</p>
@@ -82,48 +84,49 @@
                     </div>
                 </div>
                 <div class="bar">
+                    <div class="barStat" id="bootstrap">
+                        <p class="barText">Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="backEnd revealLeft">
+                <h3>Back-End</h3>
+                <p class="textSkill">Développement de la base de donnée en programmation orienté objet et mise en ligne.</p>
+                <div class="bar">
                     <div class="barStat" id="php">
                         <p class="barText">PHP</p>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="barStat" id="mariaDB">
-                        <p class="barText">MariaDB</p>
+                        <p class="barText">SQL</p>
                     </div>
                 </div>
-                <div class="bar">
-                    <div class="barStat" id="bootstrap">
-                        <p class="barText">Bootstrap</p>
-                    </div>
-                </div>
+            </div>
+            <div class="CMS revealRight">
+                <h3>CMS</h3>
+                <p class="textSkill">Création, édition et réalisation de site via CMS, principalement Wordpress, avec WooCommerce et Yoast SEO.</p>
                 <div class="bar">
                     <div class="barStat" id="wordpress">
                         <p class="barText">WordPress</p>
                     </div>
                 </div>
             </div>
-            <div class="containerSoftware revealUp revealDelay">
-                <h2>Logiciels</h2>
-                <div class="bar">
-                    <div class="barStat" id="vsc">
-                        <p class="barText">Visual Studio Code</p>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="barStat" id="git">
-                        <p class="barText">Git</p>
-                    </div>
-                </div>
+            <div class="webDesign revealLeft">
+                <h3>Web Design</h3>
+                <p class="textSkill">Création de maquette fonctionnelle.</p>
                 <div class="bar">
                     <div class="barStat" id="adobexd">
                         <p class="barText">Adobe XD</p>
                     </div>
                 </div>
-                <div class="bar">
-                    <div class="barStat" id="microsoft">
-                        <p class="barText">Suite Microsoft</p>
-                    </div>
-                </div>
+            </div>
+            <div class="workEnvironment revealRight">
+                <h3> Environnement de travail</h3>
+                <p><span>Système d'exploitation :</span> Window 10, Window 11</p>
+                <p><span>Workflow :</span> Git, Suite Microsoft</p>
+                <p><span>IDE :</span> Visual Studio Code</p>
+                <p><span>Langue :</span> Anglais (TOEIC : 925)</p>
             </div>
         </section>
         <section>
@@ -131,7 +134,7 @@
                 <h2 id="parcours">Mon Parcours</h2>
                 <div class="timeline">
                     <ul>
-                        <li class="revealUp revealDelay">
+                        <li>
                             <div class="timelineContent">
                                 <p class="date">Octobre 2021 - Mars 2022</p>
                                 <h3>Formation Développeur web</h3>
@@ -144,7 +147,8 @@
                                 <p class="date">Juin 2019 - Juin 2020</p>
                                 <h3>Ingénieur Mécanique</h3>
                                 <p class="location">Framatome, Courbevoie (92)</p>
-                                <p>Réalisation de Calcul de Dimensionnement sur le générateur de vapeur du parc existant</p>
+                                <p>Réalisation de Calcul de Dimensionnement sur le générateur de vapeur du parc existant
+                                </p>
                                 <p>Analyse et post-traitement des résultats</p>
                                 <p>Réalisation de Note de Calcul pour le client</p>
                                 <p>Gestion de projet</p>
@@ -190,43 +194,10 @@
                 </div>
             </div>
         </section>
-        <!--<div class="containerHobbies">
-            <h2 id="hobbies">Hobbies</h2>
-            <ul>
-                <li class="card1">Lecture
-                    <ul>
-                        <li>Dune</li>
-                        <li>The Witcher</li>
-                        <li> Game of Thrones</li>
-                    </ul>
-                </li>
-                <li class="card2">Cinéma
-                    <ul>
-                        <li>Batman</li>
-                        <li>Inception</li>
-                        <li>Parasite</li>
-                    </ul>
-                </li>
-                <li class="card3">Sport
-                    <ul>
-                        <li>Tennis</li>
-                        <li>Badminton</li>
-                        <li>Course à pied</li>
-                    </ul>
-                </li>
-                <li class="card4">Centre d'intérêt
-                    <ul>
-                        <li>Crypto/NFT</li>
-                        <li>Sneakers</li>
-                        <li>Design</li>
-                    </ul>
-                </li>
-            </ul>
-        </div> -->
         <section id="portfolio">
             <h2>Mes projets</h2>
-            <div class="containerPortfolio revealUp revealDelay">
-                <div class="card">
+            <div class="containerPortfolio">
+                <div class="card revealUp revealDelay">
                     <div class="cardThumb">
                         <img src="assets/img/laVersallaise.PNG" alt="">
                     </div>
@@ -236,9 +207,9 @@
                             commerce.</p>
                         <p>Objectif du projet :</p>
                         <ul>
-                            <li>Utilisation de Bootstrap</li>
-                            <li>Réalisation d'un site responsive</li>
-                            <li>Création de plusieurs pages</li>
+                            <li>Utilisation de Bootstrap.</li>
+                            <li>Réalisation d'un site responsive.</li>
+                            <li>Création de plusieurs pages.</li>
                         </ul>
                         <p>Languagues/Framework utilisés :</p>
                         <ul class="framework">
@@ -249,7 +220,7 @@
                         <a href="https://clementg60.github.io/laVersallaise/">Voir le projet</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card revealUp revealDelay">
                     <div class="cardThumb">
                         <img src="assets/img/Blossom.PNG" alt="">
                     </div>
@@ -260,7 +231,7 @@
                         <p>Objectif du projet :</p>
                         <ul>
                             <li>Création d'un menu servant à naviguer entre les différentes catégories et permettant
-                                d'accéder au panier</li>
+                                d'accéder au panier.</li>
                             <li>Apparition des produits spécifique à une catégorie au clic.</li>
                             <li>Gestion des quantités/prix dans le panier.</li>
                         </ul>
@@ -272,6 +243,32 @@
                             <li><i class="fab fa-js"></i></li>
                         </ul>
                         <a href="http://m.irf.ovh:41080/~irf/Projet-JS/">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="card revealUp revealDelay">
+                    <div class="cardThumb">
+                        <img src="assets/img/Ocordo.PNG" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <h3>Maçonnerie Ocordo</h3>
+                        <p>Projet d'une durée de 3jours avec comme objectif la création d'un site à partir d'un fichier
+                            XML.</p>
+                        <p>Objectif du projet :</p>
+                        <ul>
+                            <li>Utilisation du fichier XML pour la structure du site.</li>
+                            <li>Interiction d'ajouter du code HTML, uniquement le droit d'ajouter des classes et des
+                                ids.</li>
+                            <li>Réécriture des URLs pour qu'elles prennent le numéro de l'attribut id du nœud page
+                                suivit de l'extension HTML.</li>
+                        </ul>
+                        <p>Languagues/Framework utilisés :</p>
+                        <ul class="framework">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-bootstrap"></i></li>
+                            <li><i class="fab fa-php"></i></li>
+                        </ul>
+                        <a href="https://palsun.synology.me/Maconnerie/">Voir le projet</a>
                     </div>
                 </div>
             </div>
