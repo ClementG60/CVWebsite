@@ -652,62 +652,37 @@ footer div a:visited {
     transition-delay: .1s;
 }
 
-#html {
+#html, #php, #bootstrap, #adobexd {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: htmlSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    animation: seventy 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
 #css {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: cssSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    animation: sixtyfive 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#js {
+#js, #wordpress {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: jsSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    animation: fivety 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#php {
+#sql {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: phpSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    animation: sixtyfive 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#mariaDB {
+#symfony, #react {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: mariaSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    animation: twenty 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#bootstrap {
+#codeIgniter {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: bootstrapSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    animation: thirtyfive 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#wordpress {
-    background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: wordpressSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#vsc {
-    background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: vscSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#git {
-    background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: gitSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#adobexd {
-    background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: adobexdSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-#microsoft {
-    background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: microsoftSlide 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-@keyframes htmlSlide {
+@keyframes sixty {
     0% {
         width: 0%;
     }
@@ -717,7 +692,7 @@ footer div a:visited {
     }
 }
 
-@keyframes cssSlide {
+@keyframes fivetyfive {
     0% {
         width: 0%;
     }
@@ -727,7 +702,7 @@ footer div a:visited {
     }
 }
 
-@keyframes jsSlide {
+@keyframes thirtyfive {
     0% {
         width: 0%;
     }
@@ -737,17 +712,7 @@ footer div a:visited {
     }
 }
 
-@keyframes phpSlide {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes mariaSlide {
+@keyframes fivety {
     0% {
         width: 0%;
     }
@@ -757,27 +722,7 @@ footer div a:visited {
     }
 }
 
-@keyframes bootstrapSlide {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes wordpressSlide {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 55%;
-    }
-}
-
-@keyframes vscSlide {
+@keyframes sixtyfive {
     0% {
         width: 0%;
     }
@@ -787,7 +732,7 @@ footer div a:visited {
     }
 }
 
-@keyframes gitSlide {
+@keyframes seventy {
     0% {
         width: 0%;
     }
@@ -797,7 +742,7 @@ footer div a:visited {
     }
 }
 
-@keyframes adobexdSlide {
+@keyframes eighty {
     0% {
         width: 0%;
     }
@@ -807,12 +752,22 @@ footer div a:visited {
     }
 }
 
-@keyframes microsoftSlide {
+@keyframes eightyfive {
     0% {
         width: 0%;
     }
 
     100% {
         width: 85%;
+    }
+}
+
+@keyframes twenty {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
     }
 }
