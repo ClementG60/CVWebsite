@@ -652,27 +652,27 @@ footer div a:visited {
     transition-delay: .1s;
 }
 
-#html, #php, #bootstrap, #adobexd {
+#html, #nodejs, #figma {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
     animation: seventy 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#css {
+#js, #css {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
     animation: sixtyfive 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#js, #wordpress {
+#wordpress, #react, #sql, #php {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
     animation: fivety 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#sql {
+#express, #adobexd {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
-    animation: sixtyfive 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    animation: sixty 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#symfony, #react {
+#symfony {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
     animation: twenty 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
