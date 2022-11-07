@@ -1,357 +1,426 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>CV Numérique</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="navBar" class="navBar">
-        <ul>
-            <li><a href="#home"><i class="bi bi-house text-white"></i></a></li>
-            <li><a href="#myself">A propos de moi</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-        </ul>
-        <div class="icon">
-            <i class="fas fa-bars" onclick="menuBurger()"></i>
-        </div>
+      <ul>
+        <li>
+          <a href="#home"><i class="bi bi-house text-white"></i></a>
+        </li>
+        <li><a href="#myself">A propos de moi</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      <div class="icon">
+        <i class="fas fa-bars" onclick="menuBurger()"></i>
+      </div>
     </header>
     <main>
-        <h1>Mon Curriculum Vitae numérique</h1>
-        <section>
-            <h2 id="myself">A propos de moi</h2>
-            <div class="containerInfoMyself revealUp revealDelay">
-                <div class="containerMyself">
-                    <div class="pictureMyself">
-                        <img src="assets/img/myself.jfif" alt="">
-                        <ul>
-                            <li><span>Prénom :</span> Clément</li>
-                            <li><span>Nom :</span> Guillaume</li>
-                            <li><span>Age :</span> 26 ans</li>
-                            <li><span>Ville :</span> Versailles (78)</li>
-                        </ul>
-                    </div>
-                    <div class="textMyself">
-                        <p> Développeur web junior, je suis atuellement en alternance chez NewBound afin d'obtenir un Bac +3
-                            "Concepteur Développeur d'applications".<br>
-                            <br>Je profite de mon temps libre pour développer d'autres compétences, principalement en
-                            front-end.<br>
-                            <br>Ayant une formation d'Ingénieur Mécanique spécialisé dans la Simulation Numérique, j'ai
-                            décidé de me reconvertir en tant que développeur Web. Ayant toujours eu une attirance
-                            pour le domaine du numérique, j'ai décidé de sauter le pas et de tenter une nouvelle
-                            aventure.<br>
-                            <br>Etant quelqu'un d'autonome, je peux travailler seul ou en groupe, et mes expériences
-                            passés
-                            font que je sais m'adapter rapidement à un environnement inconnu. Je cherche toujours à
-                            satisfaire au mieux les demandes du client, en m'adaptant à ses besoins et en étant force de
-                            proposition.
-                        </p>
-                    </div>
-                </div>
+      <h1>Mon Curriculum Vitae numérique</h1>
+      <section>
+        <h2 id="myself">A propos de moi</h2>
+        <div class="containerInfoMyself revealUp revealDelay">
+          <div class="containerMyself">
+            <div class="pictureMyself">
+              <img src="assets/img/myself.jfif" alt="" />
+              <ul>
+                <li><span>Prénom :</span> Clément</li>
+                <li><span>Nom :</span> Guillaume</li>
+                <li><span>Age :</span> 26 ans</li>
+                <li><span>Ville :</span> Versailles (78)</li>
+              </ul>
             </div>
-        </section>
-        <section class="sectionSkills">
-            <h2 id="skills">Mes compétences</h2>
-            <div class="frontEnd revealRight">
-                <h3>Front-End</h3>
-                <p class="textSkill">Création de site web responsive, accessibles et répondant aux critères W3C.</p>
-                <div class="bar">
-                    <div class="barStat" id="html">
-                        <p class="barText">HTML</p>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="barStat" id="css">
-                        <p class="barText">CSS</p>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="barStat" id="js">
-                        <p class="barText">Javascript/Typescript</p>
-                    </div>
-                </div>
+            <div class="textMyself">
+              <p>
+                Développeur web junior, je suis atuellement en alternance chez
+                NewBound afin d'obtenir un Bac +3 "Concepteur Développeur
+                d'applications".<br />
+                <br />Je profite de mon temps libre pour développer d'autres
+                compétences, principalement en front-end.<br />
+                <br />Ayant une formation d'Ingénieur Mécanique spécialisé dans
+                la Simulation Numérique, j'ai décidé de me reconvertir en tant
+                que développeur Web. Ayant toujours eu une attirance pour le
+                domaine du numérique, j'ai décidé de sauter le pas et de tenter
+                une nouvelle aventure.<br />
+                <br />Etant quelqu'un d'autonome, je peux travailler seul ou en
+                groupe, et mes expériences passés font que je sais m'adapter
+                rapidement à un environnement inconnu. Je cherche toujours à
+                satisfaire au mieux les demandes du client, en m'adaptant à ses
+                besoins et en étant force de proposition.
+              </p>
             </div>
-            <div class="backEnd revealLeft">
-                <h3>Back-End</h3>
-                <p class="textSkill">Développement de la base de donnée en programmation orienté objet et mise en ligne.</p>
-                <div class="bar">
-                    <div class="barStat" id="nodejs">
-                        <p class="barText">NodeJS</p>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="barStat" id="php">
-                        <p class="barText">PHP</p>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="barStat" id="sql">
-                        <p class="barText">SQL</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionSkills">
+        <h2 id="skills">Mes compétences</h2>
+        <div class="frontEnd revealRight">
+          <h3>Front-End</h3>
+          <p class="textSkill">
+            Création de site web responsive, accessibles et répondant aux
+            critères W3C.
+          </p>
+          <div class="bar">
+            <div class="barStat" id="html">
+              <p class="barText">HTML</p>
             </div>
-            <div class="backEnd revealRight">
-                <h3>Framework</h3>
-                <div class="bar">
-                    <div class="barStat" id="express">
-                        <p class="barText">Express</p>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="barStat" id="react">
-                        <p class="barText">ReactJS</p>
-                    </div>
-                </div>
-               
-                <div class="bar">
-                    <div class="barStat" id="codeIgniter">
-                        <p class="barText">Code Igniter</p>
-                    </div>
-                </div>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="css">
+              <p class="barText">CSS</p>
             </div>
-            <div class="CMS revealLeft">
-                <h3>CMS</h3>
-                <p class="textSkill">Création, édition et réalisation de site via CMS, principalement Wordpress, avec
-                    WooCommerce et Yoast SEO.</p>
-                <div class="bar">
-                    <div class="barStat" id="wordpress">
-                        <p class="barText">WordPress</p>
-                    </div>
-                </div>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="js-fe">
+              <p class="barText">Javascript/Typescript</p>
             </div>
-            <div class="webDesign revealRight">
-                <h3>Web Design</h3>
-                <p class="textSkill">Création de maquette fonctionnelle.</p>
-                <div class="bar">
-                    <div class="barStat" id="figma">
-                        <p class="barText">Figma</p>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="barStat" id="adobexd">
-                        <p class="barText">Adobe XD</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="backEnd revealLeft">
+          <h3>Back-End</h3>
+          <p class="textSkill">
+            Développement de la base de donnée en programmation orienté objet et
+            mise en ligne.
+          </p>
+          <div class="bar">
+            <div class="barStat" id="js-be">
+              <p class="barText">Javascript/Typescript</p>
             </div>
-            <div class="workEnvironment revealLeft">
-                <h3>Environnement de travail</h3>
-                <p><span>Système d'exploitation :</span> Window 10, Window 11</p>
-                <p><span>Workflow :</span> Git, Suite Microsoft</p>
-                <p><span>IDE :</span> Visual Studio Code</p>
-                <p><span>Langue :</span> Anglais (TOEIC : 925)</p>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="php">
+              <p class="barText">PHP</p>
             </div>
-        </section>
-        <section>
-            <h2 id="parcours">Mon Parcours</h2>
-            <div class="timelineContainer">
-                <div class="timeline">
-                    <ul>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Avril 2022 - Mai 2023</p>
-                                <h3>Développeur web
-                                    
-                                </h3>
-                                <p class="location">NewBound, Paris (9ème arrondissement)</p>
-                                <p>Développeur avec pour mission :
-                                    <br>
-                                     - Réalisation d'une façade facilitant les appels à l'API.
-                                    <br>
-                                     - Rélisation d'un front responsive
-                                     <br>
-                                     - Rélisation d'une documentation technique
-                                </p>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="sql">
+              <p class="barText">SQL</p>
+            </div>
+          </div>
+        </div>
+        <div class="backEnd revealRight">
+          <h3>Framework</h3>
+          <div class="bar">
+            <div class="barStat" id="express">
+              <p class="barText">Express</p>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="react">
+              <p class="barText">ReactJS</p>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="codeIgniter">
+              <p class="barText">Code Igniter</p>
+            </div>
+          </div>
+        </div>
+        <div class="CMS revealLeft">
+          <h3>Base de données</h3>
+          <p class="textSkill">Création et gestion de base de données.</p>
+          <div class="bar">
+            <div class="barStat" id="maria">
+              <p class="barText">MariaDB</p>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="mongo">
+              <p class="barText">MongoDB</p>
+            </div>
+          </div>
+        </div>
+        <div class="webDesign revealRight">
+          <h3>Web Design</h3>
+          <p class="textSkill">Création de maquette fonctionnelle.</p>
+          <div class="bar">
+            <div class="barStat" id="figma">
+              <p class="barText">Figma</p>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="barStat" id="adobexd">
+              <p class="barText">Adobe XD</p>
+            </div>
+          </div>
+        </div>
+        <div class="workEnvironment revealLeft">
+          <h3>Environnement de travail</h3>
+          <p><span>Système d'exploitation :</span> Window 10, Window 11</p>
+          <p><span>Workflow :</span> Git, Suite Microsoft, Github, Dockers</p>
+          <p><span>IDE :</span> Visual Studio Code</p>
+          <p><span>Langue :</span> Anglais (TOEIC : 925)</p>
+        </div>
+      </section>
+      <section>
+        <h2 id="parcours">Mon Parcours</h2>
+        <div class="timelineContainer">
+          <div class="timeline">
+            <ul>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Avril 2022 - Mai 2023</p>
+                  <h3>Développeur web</h3>
+                  <p class="location">NewBound, Paris (9ème arrondissement)</p>
+                  <p>
+                    Développeur avec pour mission :
+                    <br />
+                    - Réalisation d'une façade facilitant les appels à l'API
+                    <br />
+                    - Rélisation d'un front responsive
+                    <br />
+                    - Rélisation d'une documentation technique
+                  </p>
+                </div>
+              </li>
 
-                            </div>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Avril 2022 - Mai 2023</p>
-                                <h3>Formation Concepteur Développeur d'Applications BAC+3</h3>
-                                <p class="location">La Manu, Versailles (78)</p>
-                                <p>Préparation au Titre Profesionnel "Concepteur Développeur d'Applications" en alternance</p>
-                            </div>
-                        </li>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Octobre 2021 - Mars 2022</p>
-                                <h3>Formation Développeur web et web mobile BAC+2</h3>
-                                <p class="location">La Manu, Versailles (78)</p>
-                                <p>Préparation au Titre Profesionnel "Développeur web et web mobile"</p>
-                            </div>
-                        </li>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Juin 2019 - Juin 2020</p>
-                                <h3>Ingénieur Mécanique</h3>
-                                <p class="location">Framatome, Courbevoie (92)</p>
-                                <p>Réalisation de Calcul de Dimensionnement sur le générateur de vapeur du parc existant
-                                </p>
-                                <p>Analyse et post-traitement des résultats</p>
-                                <p>Réalisation de Note de Calcul pour le client</p>
-                                <p>Gestion de projet</p>
-                                <p>Animation de réunion client</p>
-                            </div>
-                        </li>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Septembre 2015 - Février 2019</p>
-                                <h3>Ecole d'ingénieur</h3>
-                                <p class="location">UTC, Compiègne (60)</p>
-                                <p>Filière : Génie des Systèmes Mécaniques</p>
-                                <p>Spécialisation : Simulation en Ingénierie Mécanique</p>
-                            </div>
-                        </li>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Septembre 2018 - Février 2019</p>
-                                <h3>Stage Ingénieur Calcul</h3>
-                                <p class="location">CEA, Plateau de Saclay (91)</p>
-                                <p>Mise en place du Méthodologie de Calcul entre 2 outils R&D</p>
-                                <p>Réalisation de calcul statique pour le réacteur RJH</p>
-                                <p>Réalisation de note de calcul pour le client</p>
-                            </div>
-                        </li>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Septembre 2013 - Juillet 2015</p>
-                                <h3>DUT</h3>
-                                <p class="location">IUT, Amiens (80)</p>
-                                <p>Filière : Génie Mécanique et Productique</p>
-                            </div>
-                        </li>
-                        <li class="revealUp revealDelay">
-                            <div class="timelineContent">
-                                <p class="date">Juillet 2013</p>
-                                <h3>Baccaulauréat</h3>
-                                <p class="location">Lycée Jean Calvin, Noyon (60)</p>
-                                <p>Filière : Scientifique Option Physique-Chimie, Mention Très Bien</p>
-                            </div>
-                        </li>
-                    </ul>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Avril 2022 - Mai 2023</p>
+                  <h3>Formation Concepteur Développeur d'Applications BAC+3</h3>
+                  <p class="location">La Manu, Versailles (78)</p>
+                  <p>
+                    Préparation au Titre Profesionnel "Concepteur Développeur
+                    d'Applications" en alternance
+                  </p>
                 </div>
+              </li>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Octobre 2021 - Mars 2022</p>
+                  <h3>Formation Développeur web et web mobile BAC+2</h3>
+                  <p class="location">La Manu, Versailles (78)</p>
+                  <p>
+                    Préparation au Titre Profesionnel "Développeur web et web
+                    mobile"
+                  </p>
+                </div>
+              </li>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Juin 2019 - Juin 2020</p>
+                  <h3>Ingénieur Mécanique</h3>
+                  <p class="location">Framatome, Courbevoie (92)</p>
+                  <p>
+                    Réalisation de Calcul de Dimensionnement sur le générateur
+                    de vapeur du parc existant
+                  </p>
+                  <p>Analyse et post-traitement des résultats</p>
+                  <p>Réalisation de Note de Calcul pour le client</p>
+                  <p>Gestion de projet</p>
+                  <p>Animation de réunion client</p>
+                </div>
+              </li>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Septembre 2015 - Février 2019</p>
+                  <h3>Ecole d'ingénieur</h3>
+                  <p class="location">UTC, Compiègne (60)</p>
+                  <p>Filière : Génie des Systèmes Mécaniques</p>
+                  <p>Spécialisation : Simulation en Ingénierie Mécanique</p>
+                </div>
+              </li>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Septembre 2018 - Février 2019</p>
+                  <h3>Stage Ingénieur Calcul</h3>
+                  <p class="location">CEA, Plateau de Saclay (91)</p>
+                  <p>
+                    Mise en place du Méthodologie de Calcul entre 2 outils R&D
+                  </p>
+                  <p>Réalisation de calcul statique pour le réacteur RJH</p>
+                  <p>Réalisation de note de calcul pour le client</p>
+                </div>
+              </li>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Septembre 2013 - Juillet 2015</p>
+                  <h3>DUT</h3>
+                  <p class="location">IUT, Amiens (80)</p>
+                  <p>Filière : Génie Mécanique et Productique</p>
+                </div>
+              </li>
+              <li class="revealUp revealDelay">
+                <div class="timelineContent">
+                  <p class="date">Juillet 2013</p>
+                  <h3>Baccaulauréat</h3>
+                  <p class="location">Lycée Jean Calvin, Noyon (60)</p>
+                  <p>Filière : Scientifique Option Physique-Chimie</p>
+                  <p>Mention Très Bien</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <h2>Mes projets</h2>
+        <p>A venir</p>
+        <!--
+                    <div class="containerPortfolio">
+          <div class="card revealUp revealDelay">
+            <div class="cardThumb">
+              <img src="assets/img/laVersallaise.PNG" alt="" />
             </div>
-        </section>
-        <section id="portfolio">
-            <h2>Mes projets</h2>
-            <div class="containerPortfolio">
-                <div class="card revealUp revealDelay">
-                    <div class="cardThumb">
-                        <img src="assets/img/laVersallaise.PNG" alt="">
-                    </div>
-                    <div class="cardBody">
-                        <h3>La Versallaise</h3>
-                        <p>Projet d'une durée de 3jours avec comme objectif la réalisation d'un site vitrine d'une
-                            commerce.</p>
-                        <p>Objectif du projet :</p>
-                        <ul>
-                            <li>Utilisation de Bootstrap.</li>
-                            <li>Réalisation d'un site responsive.</li>
-                            <li>Création de plusieurs pages.</li>
-                        </ul>
-                        <p>Languagues/Framework utilisés :</p>
-                        <ul class="framework">
-                            <li><i class="fab fa-html5"></i></li>
-                            <li><i class="fab fa-css3-alt"></i></li>
-                            <li><i class="fab fa-bootstrap"></i></li>
-                        </ul>
-                        <a href="https://clementg60.github.io/laVersallaise/">Voir le projet</a>
-                    </div>
-                </div>
-                <div class="card revealUp revealDelay">
-                    <div class="cardThumb">
-                        <img src="assets/img/Blossom.PNG" alt="">
-                    </div>
-                    <div class="cardBody">
-                        <h3>Blossom</h3>
-                        <p>Projet d'une durée de 3jours avec comme objectif la création d'un site e-commerce de notre
-                            choix.</p>
-                        <p>Objectif du projet :</p>
-                        <ul>
-                            <li>Création d'un menu servant à naviguer entre les différentes catégories et permettant
-                                d'accéder au panier.</li>
-                            <li>Apparition des produits spécifique à une catégorie au clic.</li>
-                            <li>Gestion des quantités/prix dans le panier.</li>
-                        </ul>
-                        <p>Languagues/Framework utilisés :</p>
-                        <ul class="framework">
-                            <li><i class="fab fa-html5"></i></li>
-                            <li><i class="fab fa-css3-alt"></i></li>
-                            <li><i class="fab fa-bootstrap"></i></li>
-                            <li><i class="fab fa-js"></i></li>
-                        </ul>
-                        <a href="http://m.irf.ovh:41080/~irf/Projet-JS/">Voir le projet</a>
-                    </div>
-                </div>
-                <div class="card revealUp revealDelay">
-                    <div class="cardThumb">
-                        <img src="assets/img/Ocordo.PNG" alt="">
-                    </div>
-                    <div class="cardBody">
-                        <h3>Maçonnerie Ocordo</h3>
-                        <p>Projet d'une durée de 3jours avec comme objectif la création d'un site à partir d'un fichier
-                            XML.</p>
-                        <p>Objectif du projet :</p>
-                        <ul>
-                            <li>Utilisation du fichier XML pour la structure du site.</li>
-                            <li>Interiction d'ajouter du code HTML, uniquement le droit d'ajouter des classes et des
-                                ids.</li>
-                            <li>Réécriture des URLs pour qu'elles prennent le numéro de l'attribut id du nœud page
-                                suivit de l'extension HTML.</li>
-                        </ul>
-                        <p>Languagues/Framework utilisés :</p>
-                        <ul class="framework">
-                            <li><i class="fab fa-html5"></i></li>
-                            <li><i class="fab fa-css3-alt"></i></li>
-                            <li><i class="fab fa-bootstrap"></i></li>
-                            <li><i class="fab fa-php"></i></li>
-                        </ul>
-                        <a href="https://palsun.synology.me/Maconnerie/">Voir le projet</a>
-                    </div>
-                </div>
+            <div class="cardBody">
+              <h3>La Versallaise</h3>
+              <p>
+                Projet d'une durée de 3jours avec comme objectif la réalisation
+                d'un site vitrine d'une commerce.
+              </p>
+              <p>Objectif du projet :</p>
+              <ul>
+                <li>Utilisation de Bootstrap.</li>
+                <li>Réalisation d'un site responsive.</li>
+                <li>Création de plusieurs pages.</li>
+              </ul>
+              <p>Languagues/Framework utilisés :</p>
+              <ul class="framework">
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-bootstrap"></i></li>
+              </ul>
+              <a href="https://clementg60.github.io/laVersallaise/"
+                >Voir le projet</a
+              >
             </div>
-        </section>
-        <section>
-            <h2>Me contacter</h2>
-            <div class="containerContact revealUp revealDelay">
-                <p>Actuellement en alternance, je ne suis pas à la recherche d'un poste.</p>
-                <!--<ul>
-                    <li>Développeur Front-End</li>
-                    <li>Développeur Full Stack</li>
-                    <li>Développeur Back-End</li>
-                </ul>-->
-                <div>
-                    <a href="telto:0665732259">0665732259</a>
-                    <a href="mailto:cle_guillaume@hotmail.fr">cle_guillaume@hotmail.fr</a>
-                </div>
+          </div>
+
+          <div class="card revealUp revealDelay">
+            <div class="cardThumb">
+              <img src="assets/img/Blossom.PNG" alt="" />
             </div>
-        </section>
+            <div class="cardBody">
+              <h3>Blossom</h3>
+              <p>
+                Projet d'une durée de 3jours avec comme objectif la création
+                d'un site e-commerce de notre choix.
+              </p>
+              <p>Objectif du projet :</p>
+              <ul>
+                <li>
+                  Création d'un menu servant à naviguer entre les différentes
+                  catégories et permettant d'accéder au panier.
+                </li>
+                <li>
+                  Apparition des produits spécifique à une catégorie au clic.
+                </li>
+                <li>Gestion des quantités/prix dans le panier.</li>
+              </ul>
+              <p>Languagues/Framework utilisés :</p>
+              <ul class="framework">
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-bootstrap"></i></li>
+                <li><i class="fab fa-js"></i></li>
+              </ul>
+              <a href="http://m.irf.ovh:41080/~irf/Projet-JS/"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+          <div class="card revealUp revealDelay">
+            <div class="cardThumb">
+              <img src="assets/img/Ocordo.PNG" alt="" />
+            </div>
+            <div class="cardBody">
+              <h3>Maçonnerie Ocordo</h3>
+              <p>
+                Projet d'une durée de 3jours avec comme objectif la création
+                d'un site à partir d'un fichier XML.
+              </p>
+              <p>Objectif du projet :</p>
+              <ul>
+                <li>Utilisation du fichier XML pour la structure du site.</li>
+                <li>
+                  Interiction d'ajouter du code HTML, uniquement le droit
+                  d'ajouter des classes et des ids.
+                </li>
+                <li>
+                  Réécriture des URLs pour qu'elles prennent le numéro de
+                  l'attribut id du nœud page suivit de l'extension HTML.
+                </li>
+              </ul>
+              <p>Languagues/Framework utilisés :</p>
+              <ul class="framework">
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-bootstrap"></i></li>
+                <li><i class="fab fa-php"></i></li>
+              </ul>
+              <a href="https://palsun.synology.me/Maconnerie/"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+        </div>
+
+          -->
+      </section>
+      <section>
+        <h2>Me contacter</h2>
+        <div class="containerContact revealUp revealDelay">
+          <p>
+            Actuellement en alternance, je suis à le recherche d'une opportunité
+            après cette dernière.
+          </p>
+          <ul>
+            <li>Développeur Front-End</li>
+            <li>Développeur Full Stack</li>
+            <li>Développeur Back-End</li>
+          </ul>
+          <div>
+            <a href="telto:0665732259">0665732259</a>
+            <a href="mailto:cle_guillaume@hotmail.fr"
+              >cle_guillaume@hotmail.fr</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="containerLink revealUp revealDelay">
-            <a class="l3" href="assets/doc/CV_Clement_GUILLAUME.pdf"><i class="fas fa-print"></i></a>
-            <a class="l3" href="https://github.com/ClementG60"><i class="fab fa-github"></i></a>
-            <a class="l3" href="https://www.linkedin.com/in/cl%C3%A9ment-guillaume-3794b2140/"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="containerFooter">
-            <p>Clément GUILLAUME © 2021</p>
-            <p>Tous droits réservés</p>
-        </div>
-
+      <div class="containerLink revealUp revealDelay">
+        <a class="l3" href="assets/doc/CV_Clement_GUILLAUME.pdf"
+          ><i class="fas fa-print"></i
+        ></a>
+        <a class="l3" href="https://github.com/ClementG60"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="l3"
+          href="https://www.linkedin.com/in/cl%C3%A9ment-guillaume-3794b2140/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="containerFooter">
+        <p>Clément GUILLAUME © 2021</p>
+        <p>Tous droits réservés</p>
+      </div>
     </footer>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/revealScroll.js"></script>
-</body>
-
+  </body>
 </html>

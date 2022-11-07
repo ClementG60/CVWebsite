@@ -249,6 +249,7 @@ header ul li a {
     font-size: 12px;
     margin-bottom: 10px;
     letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .timelineContent .location {
@@ -358,17 +359,16 @@ header ul li a {
     color: #fff;
     font-weight: bold;
     display: block;
-    width: 30%;
+    width: 40%;
     margin: 10px auto;
     text-align: center;
     border-radius: 15px;
     transition: all .2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .cardBody a:hover {
-    background: transparent;
-    color: #e05a47;
-    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .containerContact {
@@ -408,10 +408,12 @@ header ul li a {
     padding: 40px 20px;
     text-decoration: none;
     color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .containerContact div a:hover {
     transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .containerContact div a:first-child {
@@ -426,6 +428,7 @@ header ul li a {
     justify-content: center;
     margin-top: 25px;
     background: #003f80;
+    padding-bottom: 10px;
 }
 
 .containerFooter p {
@@ -652,12 +655,12 @@ footer div a:visited {
     transition-delay: .1s;
 }
 
-#html, #nodejs, #figma {
+#html, #js-fe, #figma, #maria {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
     animation: seventy 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#js, #css {
+#js-be, #css {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
     animation: sixtyfive 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
@@ -667,7 +670,7 @@ footer div a:visited {
     animation: fivety 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-#express, #adobexd {
+#express, #adobexd, #mongo {
     background: linear-gradient(90deg, rgba(230, 95, 73, 1) 0%, rgba(35, 50, 182, 1) 100%);
     animation: sixty 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
