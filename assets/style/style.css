@@ -18,7 +18,10 @@ body {
 h1 {
     font-size: 35px;
     color: #003f80;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    margin-left: 5px;
 }
 
 h2 {
